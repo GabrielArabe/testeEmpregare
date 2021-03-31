@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="text-justify col-md-6 align-self-center">
+        <h4 class="text-left">SOLUÇÕES PARA</h4>
+        <h1 class="text-left font-weight-bold">CANDIDATOS</h1>
+        <p>Amplie suas possibilidades! Cadastre seu currículo e aproveite os recursos exclusivos que disponibilizamos para você gratuitamente</p>     
+        @Html.ActionLink("Cadastre-se", "cadastro", "candidato", null, new {@class= "btn-primary" })
+
+    </div>
+    <div class="text-center col-md-6">
+        <img src="~/images/destaque.jpeg" alt="imagem destaque" />
+    </div>
+</div>
+
+
+<div class="backgroundColor container">
+    <div class="row">
+        <div class="col-3"></div>
+        <h2 class="col-6 text-center text-padding">Confira nossas vagas disponíveis</h2>
+        <div class="col-3"></div>
+    </div>
+
+
+    <div class="row" id="containerVagas">
+
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 text-padding">
+        <h2>Faça parte você também</h2>
+        @Html.ActionLink("Cadastre-se", "cadastro", "candidato", null, new { @class = "btn-primary" })
+    </div>
+    <div class="col-md-3"></div>
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded",function() {
+        carregarVagas();
+    })
+</script>

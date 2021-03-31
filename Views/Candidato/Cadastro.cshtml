@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <h1>Cadastro de usuário</h1>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <label>Nome: </label>
+            <input type="text" id="nome" value="" />
+        </div>
+
+        <div class="col-md-6">
+            <label>Telefone: </label>
+            <input type="tel" id="telefone" value="" />
+        </div>
+
+        <div class="col-md-6">
+            <label>E-mail: </label>
+            <input type="email" id="email" value="" />
+        </div>
+
+        <div class="col-md-6">
+            <label>Senha: </label>
+            <input type="password" id="senha"  value="" />
+        </div>
+    </div>
+       
+        <button class="btn-primary" value="Cadastrar" onclick="cadastrarCandidato()">Cadastrar</button>
+</div>
